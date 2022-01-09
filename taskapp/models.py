@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Person(models.Model):
+    """Person model"""
     name = models.CharField(max_length=100)
     email = models.EmailField()
     age = models.IntegerField()
@@ -13,8 +14,9 @@ class Person(models.Model):
     def __str__(self):
         return self.name
     
-# person_id Foreign Key, department, role, line_manager person_id Foreign Key, created datetime, modified datetime
+
 class Employee(models.Model):
+    """Employee Model"""
     person_id = models.ForeignKey(Person,on_delete=models.CASCADE)
     department = models.CharField(max_length=200)
     role = models.CharField(max_length=100)
