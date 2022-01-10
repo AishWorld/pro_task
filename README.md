@@ -1,6 +1,6 @@
 # pro_task
-1.Create a Django project (use https://pipenv.pypa.io/en/latest/)
-2.Use Postgres as DB (in Docker container)
+1.Create a Django project.
+2.Use Postgres as DB.
 3.Add tables:
 Person (name, email, age, phone, address, created datetime, modified datetime)
 Employee (person_id Foreign Key, department, role, created datetime, modified datetime)
